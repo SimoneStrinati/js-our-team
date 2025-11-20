@@ -4,3 +4,37 @@
     padding: 0;
 }
 
+body {
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.main-container {
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card-container {
+    width: calc((100% - 2em) / 3);
+}
+
+.card-container img {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+}
+
+.card-text {
+    text-align: center;
+}
