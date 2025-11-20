@@ -40,10 +40,18 @@ const teamMembers = [
 let listHTML = ""
 
 for (let i = 0; i < teamMembers.length; i++) {
-  const teamMember =  teamMembers[i];
+  const teamMember = teamMembers[i];
 
-  listHTML += `<div>${teamMember.name} - ${teamMember.role} - ${teamMember.email}</div>`
-  
+  listHTML += `<div class="card-container">
+                  <div class="card">
+                    <img src="${teamMember.img}" alt="${teamMember.name}">
+                  </div>
+                    <div class="card-text">
+                      <h3>${teamMember.name}</h3>
+                      <p><strong>${teamMember.role}</strong></p>
+                    </div>
+                </div>`
+
 }
 
 console.log(listHTML)
