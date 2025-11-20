@@ -37,9 +37,16 @@ const teamMembers = [
   }
 ];
 
+let listHTML = ""
+
 for (let i = 0; i < teamMembers.length; i++) {
   const teamMember =  teamMembers[i];
 
-  console.log(teamMember)
+  listHTML += `<div>${teamMember.name} - ${teamMember.role} - ${teamMember.email}</div>`
   
 }
+
+console.log(listHTML)
+
+const listElem = document.getElementById("team-container");
+listElem.innerHTML += listHTML
